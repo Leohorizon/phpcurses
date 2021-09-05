@@ -71,8 +71,53 @@ $ip = $_SERVER["SCRIPT_NAME"];
 
 echo $ip;
 
+//escopo de variavel
+
+$nome = "claugio";
+
+//umEscopo
+function teste(){
+    global $nome;
+    echo $nome;
+
+}
+
+function teste2(){
+    global $anoNascimento;
+    echo $anoNascimento;
+
+}
+
+teste();
+
+teste2();
 
 
+//operadores no php
+
+//atribuição
+
+$nome = "Hcode";
+
+echo $nome . " eh bom";
+
+$nome .= " eh bom";
+
+echo $nome;
+
+// mais igual e menos igual
+
+$valorTotal =0;
+
+$valorTotal +=100;
+
+$valorTotal +=25;
+
+echo $valorTotal;
+
+$valorTotal -=15;
+
+echo $valorTotal;
 
 
 
