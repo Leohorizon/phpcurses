@@ -119,10 +119,102 @@ $valorTotal -=15;
 
 echo $valorTotal;
 
+//modulo (resto)
 
 
+$a = 10;
+$b = 2;
+
+echo "<br>";
+echo $a + $b;
+
+echo "<br>";
+echo $a * $b;
+
+echo "<br>";
+echo $a / $b;
+
+//resto
+echo "<br>";
+echo $a % $b;
+
+//potencialização
+echo "<br>";
+echo $a ** $b;
+
+//comparação
+unset($a);
+unset($b);
+
+$a = 30.0;
+$b = 30;
+echo "<br>";
+var_dump($a > $b);
+echo "<br>";
+var_dump($b > $a);
+echo "<br>";
+var_dump($a == $b);
+echo "<br>";
+var_dump($a === $b);
+echo "<br>";
+var_dump($a != $b);
+
+//caso a seja maior numero sera 1
+//caso b seja maior numero sera -1
+//caso a e b sejam iguais o numero sera 0
+
+unset($a);
+unset($b);
+
+$a = 10;
+$b = 20;
+echo "<br>";
+var_dump($a <=> $b);
+
+echo "<br>";
+var_dump($b <=> $b);
+
+echo "<br>";
+var_dump($b <=> $a);
+
+echo "<br>";
+
+echo "teste teclado novo";
 
 
+//Null colessin
+
+unset($a);
+unset($b);
+
+$c = 100;
+
+echo "<br>";
+echo $a ?? $b ?? $c;
+
+
+//incremento, para decremento a mesma logica porem com o --
+
+$a = 10;
+echo "<br>";
+echo $a++;
+echo "<br>";
+echo $a;
+echo "<br>";
+echo ++$a;
+
+
+//Parenteses
+
+$Resultado = 10 + 3 /2;
+$Resultado2 = (10 + 3) /2 >5 ||10 + 3 <20;
+
+echo "<br>";
+echo $Resultado;
+echo "<br>";
+echo $Resultado2;
+
+var_dump($Resultado2);
 
 
 ?>
